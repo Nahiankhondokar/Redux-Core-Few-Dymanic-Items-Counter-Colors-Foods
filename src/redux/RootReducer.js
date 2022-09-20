@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
-import { ColorReducer } from "./ColorReducer";
-import { CounterReducer } from "./CounterReducer";
-import { FoodReducer } from "./FoodReducer";
+import { ColorReducer } from "./color/ColorReducer";
+import { CounterReducer } from "./counter/CounterReducer";
+import { FoodReducer } from "./food/FoodReducer";
 
 const RootReducer = combineReducers({
     counter : CounterReducer,

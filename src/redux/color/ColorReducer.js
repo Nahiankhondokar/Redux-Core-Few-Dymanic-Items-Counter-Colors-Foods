@@ -1,21 +1,18 @@
+import { GRAY, GREEN, RED } from "./actionType";
+import { initialState } from "./initialState";
 
 
-
-// counter 
-const initialState = 'gray';
-
-
-// counter reducer
+// color reducer
 export const ColorReducer = (state = initialState, { type, payload }) => {
 
     switch (type) {
-        case 'RED':
+        case RED :
             return state = 'red';
 
-        case 'GRAY':
+        case GRAY :
             return state = 'gray';
 
-        case 'GREEN':
+        case GREEN :
             return 'green';
     
         default:
