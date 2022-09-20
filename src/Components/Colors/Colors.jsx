@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 const Colors = () => {
 
     const dispatch = useDispatch();
+    const { food } = useSelector(state => state);
     
   return (
     <div className="container">
@@ -14,6 +15,7 @@ const Colors = () => {
                     <button onClick={() => dispatch({ type : "GREEN" }) }>GREEN</button>
                     <button onClick={() => dispatch({ type : "GRAY" }) }>GRAY</button>
 
+                    <h3 className='text-center'>{food}</h3>
                 </div>
             </div>
         </div>
