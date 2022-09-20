@@ -2,16 +2,21 @@
 
 
 // counter 
-const initialState = 0;
+const initialState = 'gray';
 
 
 // counter reducer
 export const ColorReducer = (state = initialState, { type, payload }) => {
 
     switch (type) {
-        case '':
-            
-            break;
+        case 'RED':
+            return state = 'red';
+
+        case 'GRAY':
+            return state = 'gray';
+
+        case 'GREEN':
+            return 'green';
     
         default:
             return state;
