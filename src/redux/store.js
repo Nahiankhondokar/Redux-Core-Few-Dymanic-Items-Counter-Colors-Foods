@@ -1,9 +1,10 @@
-import { createStore } from "redux";
+import { applyMiddleware, createStore } from "redux";
 import RootReducer from "./RootReducer";
 import { composeWithDevTools } from "redux-devtools-extension";
+import CheckMiddleware from "../Middleware/CheckMiddleware";
 
 
-const store = createStore(RootReducer, composeWithDevTools());
+const store = createStore(RootReducer, composeWithDevTools(applyMiddleware( CheckMiddleware )));
 
 
 
