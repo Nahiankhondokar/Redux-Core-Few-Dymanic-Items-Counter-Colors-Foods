@@ -1,3 +1,4 @@
+import { USER_ADDED, USER_REMOVE, USER_UPDATED } from "./actionType";
 import { initialState } from "./initialState";
 
 
@@ -6,20 +7,20 @@ import { initialState } from "./initialState";
 export const userReducer = (state = initialState, { type , payload}) => {
 
     switch (type) {
-        case 'USER_ADDED':
+        case USER_ADDED:
             return {
                 ...state,
                user : payload
             } 
 
-        case 'USER_REMOVE':
+        case USER_REMOVE:
             return {
                 ...state,
                user : payload
             } 
 
             
-        case 'USER_UPDATED':
+        case USER_UPDATED:
             return {
                 ...state,
                user : payload
